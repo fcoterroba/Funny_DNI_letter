@@ -10,7 +10,7 @@ There's a free open demo online hosted using GitHub Pages. [Here](https://fcoter
 ## How can I contribute?
 Mainly you can add more people directly in the [script](https://github.com/fcoterroba/Funny_DNI_letter/blob/gh-pages/script.js) in the `const persons` following the pattern:
 
-_name - surname - image_
+_name - surname - image - birthday in (DD/MM/YYYY)_
 
 Please use an stable website for the images (like Wikipedia, archive.org, etc.)
 

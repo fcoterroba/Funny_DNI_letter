@@ -4,6 +4,13 @@
     text-align: center;
 }
 
+.page-footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+}
+
 .texto_imagen{
     position: absolute;
     top: 430px;

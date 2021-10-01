@@ -6,6 +6,11 @@ const persons = [
     ["Francisco", "Franco Bahamonde", "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/RETRATO_DEL_GRAL._FRANCISCO_FRANCO_BAHAMONDE_%28adjusted_levels%29.jpg/220px-RETRATO_DEL_GRAL._FRANCISCO_FRANCO_BAHAMONDE_%28adjusted_levels%29.jpg", "01/10/1936"],
     ["Fernando", "Gálvez Gómez", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Yung_Beef_Rapero.jpg/220px-Yung_Beef_Rapero.jpg", "23/01/1990"],
     ["Aubrey", "Drake Graham", "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Drake_July_2016.jpg/466px-Drake_July_2016.jpg", "24/10/1986"],
+    ["Penélope", "Cruz Sánchez", "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Premios_Goya_2018_-_Pen%C3%A9lope_Cruz.jpg/330px-Premios_Goya_2018_-_Pen%C3%A9lope_Cruz.jpg", "28/04/1974"],
+    ["José Antonio Domínguez", "Bandera", "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Antonio_Banderas_2019_%28cropped%29.jpg/330px-Antonio_Banderas_2019_%28cropped%29.jpg", "10/08/1960"],
+    ["Campos", "Trigos", "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Premios_Goya_2019_-_Paz_Vega_%28cropped%29.jpg/330px-Premios_Goya_2019_-_Paz_Vega_%28cropped%29.jpg", "02/01/1976"],
+    ["Rafael", "Nadal Parera", "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Rafael_Nadal_10%2C_Aegon_Championships%2C_London%2C_UK_-_Diliff_%28cropped%29.jpg/330px-Rafael_Nadal_10%2C_Aegon_Championships%2C_London%2C_UK_-_Diliff_%28cropped%29.jpg", "03/06/1986"],
+    ["David", "de Gea Quintana", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/David_de_Gea_2017.jpg/330px-David_de_Gea_2017.jpg", "07/11/1990"]
 ]
 function getKeyByValue(object, value) {
     return Object.keys(object).find(key => 

@@ -8,13 +8,14 @@ const persons = [
     ["Aubrey", "Drake Graham", "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Drake_July_2016.jpg/466px-Drake_July_2016.jpg", "24/10/1986"],
     ["Penélope", "Cruz Sánchez", "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Premios_Goya_2018_-_Pen%C3%A9lope_Cruz.jpg/330px-Premios_Goya_2018_-_Pen%C3%A9lope_Cruz.jpg", "28/04/1974"],
     ["José Antonio Domínguez", "Bandera", "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Antonio_Banderas_2019_%28cropped%29.jpg/330px-Antonio_Banderas_2019_%28cropped%29.jpg", "10/08/1960"],
-    ["Campos", "Trigos", "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Premios_Goya_2019_-_Paz_Vega_%28cropped%29.jpg/330px-Premios_Goya_2019_-_Paz_Vega_%28cropped%29.jpg", "02/01/1976"],
+    ["Campos", "Trigos", "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Premios_Goya_2019_-_Paz_Vega_%28cropped%29.jpg/330px-Premios_Goya_2019_-_Paz_Vega_%28cropped%29.jpg", "02/01/1976" ] ,
     ["Rafael", "Nadal Parera", "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Rafael_Nadal_10%2C_Aegon_Championships%2C_London%2C_UK_-_Diliff_%28cropped%29.jpg/330px-Rafael_Nadal_10%2C_Aegon_Championships%2C_London%2C_UK_-_Diliff_%28cropped%29.jpg", "03/06/1986"],
     ["David", "de Gea Quintana", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/David_de_Gea_2017.jpg/330px-David_de_Gea_2017.jpg", "07/11/1990"],
-    ["Cristiano Ronaldo", "dos Santos Aveiro", "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg", "05/02/1985"​],
+    // ["Cristiano Ronaldo", "dos Santos Aveiro", "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg", "05/02/1985"​],
     ["Kimberly Noel", "Kardashian West", "https://upload.wikimedia.org/wikipedia/commons/e/e6/Kim_Kardashian_2019.jpg", "21/10/1980"],
     ["Kanye", "Omari West", "https://upload.wikimedia.org/wikipedia/commons/7/75/Kanye_West_in_2019.png", "08/06/1977"]
 ]
+const personElement = document.getElementById('persons');
 function getKeyByValue(object, value) {
     return Object.keys(object).find(key => 
             object[key] === value);
@@ -56,3 +57,15 @@ function get_letter(dni){
     document.getElementById("img_random").innerHTML = "<img src='"+persons[random_person][2]+"' id='img_dni'>";
     }
 }
+const fetchContributors = ()=>{
+
+    const url = 'https://api.github.com/repos/fcoterroba/Funny_DNI_letter/contributors'
+    fetch(url)
+        .then(response => {
+        return response.json();
+        })
+        .then(data =>{
+            personElement.textContent = data.length -1;
+        })
+}
+fetchContributors();

@@ -74,3 +74,15 @@ const fetchContributors = ()=>{
         })
 }
 fetchContributors();
+
+//Dark mode
+
+const toggleColorMode = document.getElementById('color-mode-button');
+const bodyElement = document.body;
+
+function handleColorMode() {
+    bodyElement.classList.toggle('dark-mode');
+    toggleColorMode.innerHTML = bodyElement.classList.contains('dark-mode') ? 'Light' : 'Dark';
+}
+
+toggleColorMode.addEventListener('click', handleColorMode);

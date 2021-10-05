@@ -54,6 +54,17 @@
 #letra {
   margin-top: -70px;
 }
+/* Removing Aerrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 @media only screen and (max-width: 480px) {
   #dni {
     width: 340px;

@@ -13,7 +13,12 @@ const persons = [
     ["David", "de Gea Quintana", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/David_de_Gea_2017.jpg/330px-David_de_Gea_2017.jpg", "07/11/1990"],
     // ["Cristiano Ronaldo", "dos Santos Aveiro", "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg", "05/02/1985"​],
     ["Kimberly Noel", "Kardashian West", "https://upload.wikimedia.org/wikipedia/commons/e/e6/Kim_Kardashian_2019.jpg", "21/10/1980"],
-    ["Kanye", "Omari West", "https://upload.wikimedia.org/wikipedia/commons/7/75/Kanye_West_in_2019.png", "08/06/1977"]
+    ["Kanye", "Omari West", "https://upload.wikimedia.org/wikipedia/commons/7/75/Kanye_West_in_2019.png", "08/06/1977"],
+    ["Iker", "Casillas Fernández", "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Iker_Casillas_2.jpg/330px-Iker_Casillas_2.jpg", "20/05/1981"],
+    ["José", "Mourinho Félix", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Jos%C3%A9_Mourinho.jpg/368px-Jos%C3%A9_Mourinho.jpg", "26/01/1963"],
+    ["Thomas", "Cruise Mapother IV", "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Tom_Cruise_by_Gage_Skidmore_2.jpg/375px-Tom_Cruise_by_Gage_Skidmore_2.jpg", "03/07/1962"],
+    ["Nicole", "Mary Kidman", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/TIFF_2019_nicole_kidman_%2848701113091%29_%28cropped%29.jpg/300px-TIFF_2019_nicole_kidman_%2848701113091%29_%28cropped%29.jpg", "20/06/1967"],
+    ["Leonardo", " Wilhelm DiCaprio", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Leonardo_Dicaprio_Cannes_2019.jpg/330px-Leonardo_Dicaprio_Cannes_2019.jpg", "11/11/1974"],
 ]
 const personElement = document.getElementById('persons');
 function getKeyByValue(object, value) {

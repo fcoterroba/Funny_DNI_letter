@@ -8,7 +8,7 @@ const persons = [
     ["Aubrey", "Drake Graham", "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Drake_July_2016.jpg/466px-Drake_July_2016.jpg", "24/10/1986"],
     ["Penélope", "Cruz Sánchez", "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Premios_Goya_2018_-_Pen%C3%A9lope_Cruz.jpg/330px-Premios_Goya_2018_-_Pen%C3%A9lope_Cruz.jpg", "28/04/1974"],
     ["José Antonio Domínguez", "Bandera", "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Antonio_Banderas_2019_%28cropped%29.jpg/330px-Antonio_Banderas_2019_%28cropped%29.jpg", "10/08/1960"],
-    ["Campos", "Trigos", "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Premios_Goya_2019_-_Paz_Vega_%28cropped%29.jpg/330px-Premios_Goya_2019_-_Paz_Vega_%28cropped%29.jpg", "02/01/1976" ] ,
+    ["Campos", "Trigos", "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Premios_Goya_2019_-_Paz_Vega_%28cropped%29.jpg/330px-Premios_Goya_2019_-_Paz_Vega_%28cropped%29.jpg", "02/01/1976"],
     ["Rafael", "Nadal Parera", "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Rafael_Nadal_10%2C_Aegon_Championships%2C_London%2C_UK_-_Diliff_%28cropped%29.jpg/330px-Rafael_Nadal_10%2C_Aegon_Championships%2C_London%2C_UK_-_Diliff_%28cropped%29.jpg", "03/06/1986"],
     ["David", "de Gea Quintana", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/David_de_Gea_2017.jpg/330px-David_de_Gea_2017.jpg", "07/11/1990"],
     // ["Cristiano Ronaldo", "dos Santos Aveiro", "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg", "05/02/1985"​],
@@ -22,55 +22,61 @@ const persons = [
 ]
 const personElement = document.getElementById('persons');
 function getKeyByValue(object, value) {
-    return Object.keys(object).find(key => 
-            object[key] === value);
+    return Object.keys(object).find(key =>
+        object[key] === value);
 }
-function get_letter(dni){
+function get_letter(dni) {
     if (dni.length == 8) {
         const letters = {
-        "T": 0,
-        "R": 1,
-        "W": 2,
-        "A": 3,
-        "G": 4,
-        "M": 5,
-        "Y": 6,
-        "F": 7,
-        "P": 8,
-        "D": 9,
-        "X": 10,
-        "B": 11,
-        "N": 12,
-        "J": 13,
-        "Z": 14,
-        "S": 15,
-        "Q": 16,
-        "V": 17,
-        "H": 18,
-        "L": 19,
-        "C": 20,
-        "K": 21,
-        "E": 22
-    };
+            "T": 0,
+            "R": 1,
+            "W": 2,
+            "A": 3,
+            "G": 4,
+            "M": 5,
+            "Y": 6,
+            "F": 7,
+            "P": 8,
+            "D": 9,
+            "X": 10,
+            "B": 11,
+            "N": 12,
+            "J": 13,
+            "Z": 14,
+            "S": 15,
+            "Q": 16,
+            "V": 17,
+            "H": 18,
+            "L": 19,
+            "C": 20,
+            "K": 21,
+            "E": 22
+        };
 
 
-    document.getElementById("letra").innerHTML = getKeyByValue(letters, (dni%23));
-    random_person = Math.floor(Math.random()*persons.length);
-    document.getElementById("nombre_random").innerHTML = persons[random_person][0];
-    document.getElementById("apellido_random").innerHTML = persons[random_person][1];
-    document.getElementById("fecha_random").innerHTML = persons[random_person][3];
-    document.getElementById("img_random").innerHTML = "<img src='"+persons[random_person][2]+"' id='img_dni'>";
+        document.getElementById("letra").innerHTML = getKeyByValue(letters, (dni % 23));
+        random_person = Math.floor(Math.random() * persons.length);
+        document.getElementById("nombre_random").innerHTML = persons[random_person][0];
+        document.getElementById("apellido_random").innerHTML = persons[random_person][1];
+        document.getElementById("fecha_random").innerHTML = persons[random_person][3];
+        document.getElementById("img_random").innerHTML = "<img src='" + persons[random_person][2] + "' id='img_dni'>";
     }
 }
-const fetchContributors = ()=>{
+// ON BACKSPACE & ON ENTERING EXTRA NUMBERS -> DELETE ALL INPUT 
+document.getElementById("inputValue").addEventListener('keyup', (e) => {
+    if (e.key == "Backspace" || document.getElementById("inputValue").value > 99999999) {
+        document.getElementById("inputValue").value = null;
+    }
+})
+const fetchContributors = () => {
 
     const url = 'https://api.github.com/repos/fcoterroba/Funny_DNI_letter/contributors'
     fetch(url)
         .then(response => {
-        return response.json();
+            return response.json();
         })
-        .then(data =>{
-            personElement.textContent = data.length -1;
+        .then(data => {
+            personElement.textContent = data.length - 1;
         })
 }
 fetchContributors();

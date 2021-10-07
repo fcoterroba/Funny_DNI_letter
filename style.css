@@ -3,7 +3,31 @@
   display: inline-block;
   text-align: center;
 }
-
+.dark-mode{
+  background-color: #3E3D40;
+  color: #fff;
+}
+nav, .page-footer {
+  background-color: #2b7a64;
+}
+#color-mode-button{
+  background-color: #31836c;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  width: 60px;
+  height: 38px;
+  padding: 10px;
+  margin: 0 20px;
+  outline: none;
+  font-size: 12px;
+  transition: filter 0.4s;
+}
+#color-mode-button:hover{
+  filter: brightness(0.9)
+}
 .page-footer {
   position: fixed;
   bottom: 0;

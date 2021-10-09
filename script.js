@@ -19,6 +19,7 @@ const persons = [
     ["Thomas", "Cruise Mapother IV", "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Tom_Cruise_by_Gage_Skidmore_2.jpg/375px-Tom_Cruise_by_Gage_Skidmore_2.jpg", "03/07/1962"],
     ["Nicole", "Mary Kidman", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/TIFF_2019_nicole_kidman_%2848701113091%29_%28cropped%29.jpg/300px-TIFF_2019_nicole_kidman_%2848701113091%29_%28cropped%29.jpg", "20/06/1967"],
     ["Leonardo", " Wilhelm DiCaprio", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Leonardo_Dicaprio_Cannes_2019.jpg/330px-Leonardo_Dicaprio_Cannes_2019.jpg", "11/11/1974"],
+    ["Carlos", " Sainz Jr.", "https://upload.wikimedia.org/wikipedia/commons/0/05/Formel12021-SchlossGabelhofen%2815%29_%28cropped%29.jpg", "01/09/1994"],
 ]
 const personElement = document.getElementById('persons');
 function getKeyByValue(object, value) {

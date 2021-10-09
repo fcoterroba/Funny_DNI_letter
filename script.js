@@ -1,4 +1,8 @@
 const persons = [
+    ["Salman","Khan","https://upload.wikimedia.org/wikipedia/commons/8/86/Salman_Khan_at_Renault_Star_Guild_Awards.jpg", "27/12/1965"]
+    ["Shah Rukh", "Khan", "https://upload.wikimedia.org/wikipedia/commons/6/6e/Shah_Rukh_Khan_graces_the_launch_of_the_new_Santro.jpg", "02/11/1965"]
+    ["Millie", "Bobby Brown","https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Millie_Bobby_Brown_Pandora_2020_51s.jpg/330px-Millie_Bobby_Brown_Pandora_2020_51s.jpg","19/02/2004"]
+    ["Hrithik", "Roshan", "https://upload.wikimedia.org/wikipedia/commons/9/9c/Hrithik_at_Rado_launch.jpg", "10/01/1974"],
     ["Dwayne", "Douglas Johnson", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Dwayne_Johnson_2%2C_2013.jpg/220px-Dwayne_Johnson_2%2C_2013.jpg", "02/05/1972"],
     ["Mark", "Sinclair Vincent", "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Vin_Diesel_XXX_Return_of_Xander_Cage_premiere.png/220px-Vin_Diesel_XXX_Return_of_Xander_Cage_premiere.png", "18/06/1967"],
     ["Lionel Andrés", "Messi Cuccittini", "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Lionel_Messi_20180626.jpg/245px-Lionel_Messi_20180626.jpg", "24/06/1987"],
@@ -11,7 +15,7 @@ const persons = [
     ["Campos", "Trigos", "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Premios_Goya_2019_-_Paz_Vega_%28cropped%29.jpg/330px-Premios_Goya_2019_-_Paz_Vega_%28cropped%29.jpg", "02/01/1976"],
     ["Rafael", "Nadal Parera", "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Rafael_Nadal_10%2C_Aegon_Championships%2C_London%2C_UK_-_Diliff_%28cropped%29.jpg/330px-Rafael_Nadal_10%2C_Aegon_Championships%2C_London%2C_UK_-_Diliff_%28cropped%29.jpg", "03/06/1986"],
     ["David", "de Gea Quintana", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/David_de_Gea_2017.jpg/330px-David_de_Gea_2017.jpg", "07/11/1990"],
-    // ["Cristiano Ronaldo", "dos Santos Aveiro", "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg", "05/02/1985"​],
+    ["Cristiano Ronaldo", "dos Santos Aveiro", "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg", "05/02/1985"],
     ["Kimberly Noel", "Kardashian West", "https://upload.wikimedia.org/wikipedia/commons/e/e6/Kim_Kardashian_2019.jpg", "21/10/1980"],
     ["Kanye", "Omari West", "https://upload.wikimedia.org/wikipedia/commons/7/75/Kanye_West_in_2019.png", "08/06/1977"],
     ["Iker", "Casillas Fernández", "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Iker_Casillas_2.jpg/330px-Iker_Casillas_2.jpg", "20/05/1981"],

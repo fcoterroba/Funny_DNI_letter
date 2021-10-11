@@ -19,7 +19,14 @@ const persons = [
     ["Thomas", "Cruise Mapother IV", "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Tom_Cruise_by_Gage_Skidmore_2.jpg/375px-Tom_Cruise_by_Gage_Skidmore_2.jpg", "03/07/1962"],
     ["Nicole", "Mary Kidman", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/TIFF_2019_nicole_kidman_%2848701113091%29_%28cropped%29.jpg/300px-TIFF_2019_nicole_kidman_%2848701113091%29_%28cropped%29.jpg", "20/06/1967"],
     ["Leonardo", " Wilhelm DiCaprio", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Leonardo_Dicaprio_Cannes_2019.jpg/330px-Leonardo_Dicaprio_Cannes_2019.jpg", "11/11/1974"],
-    ["Carlos", " Sainz Jr.", "https://upload.wikimedia.org/wikipedia/commons/0/05/Formel12021-SchlossGabelhofen%2815%29_%28cropped%29.jpg", "01/09/1994"],
+    ["Carlos", "Sainz Jr.", "https://upload.wikimedia.org/wikipedia/commons/0/05/Formel12021-SchlossGabelhofen%2815%29_%28cropped%29.jpg", "01/09/1994"],
+    ["Ana", "Torroja Fungairiño", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Ana_Torroja.jpg/800px-Ana_Torroja.jpg", "28/12/1959"],
+    ["Joaquín Ramón", "Martínez Sabina", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Joaquin_Sabina.jpg/800px-Joaquin_Sabina.jpg", "12/02/1949"],
+    ["Fernando", "Alonso Díaz", "https://upload.wikimedia.org/wikipedia/commons/b/bc/Alonso_2020_in_Renault_kit.jpg", "29/07/1981"],
+    ["Enrique", "Ortiz de Landázuri Izarduy", "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Enrique_Bunbury_-_16.jpg/1024px-Enrique_Bunbury_-_16.jpg", "11/08/1967"],
+    ["David", "Summers Rodríguez", "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Hombres_G_2007.10.13_002.jpg/800px-Hombres_G_2007.10.13_002.jpg", "26/02/1964"],
+    ["Mikel", "Erentxun", "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Mikel_Erentxun_2007.10.13_006.jpg/800px-Mikel_Erentxun_2007.10.13_006.jpg", "23/02/1965"],
+    ["Pedro", "Martínez De la Rosa", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Pedro_de_la_Rosa_2010_Malaysia.jpg/225px-Pedro_de_la_Rosa_2010_Malaysia.jpg", "24/02/1971"],
 ]
 const personElement = document.getElementById('persons');
 function getKeyByValue(object, value) {

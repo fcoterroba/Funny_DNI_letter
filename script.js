@@ -33,8 +33,8 @@ function getKeyByValue(object, value) {
     return Object.keys(object).find(key =>
         object[key] === value);
 }
-function get_letter(dni) {
-    if (dni.length == 8) {
+function get_letter(event, dni) {
+    if (dni.length == 8 && !isNaN(parseInt(event.key))) {
         const letters = {
             "T": 0,
             "R": 1,

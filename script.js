@@ -27,6 +27,7 @@ const persons = [
     ["David", "Summers Rodríguez", "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Hombres_G_2007.10.13_002.jpg/800px-Hombres_G_2007.10.13_002.jpg", "26/02/1964"],
     ["Mikel", "Erentxun", "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Mikel_Erentxun_2007.10.13_006.jpg/800px-Mikel_Erentxun_2007.10.13_006.jpg", "23/02/1965"],
     ["Pedro", "Martínez De la Rosa", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Pedro_de_la_Rosa_2010_Malaysia.jpg/225px-Pedro_de_la_Rosa_2010_Malaysia.jpg", "24/02/1971"],
+    ["Chema", "Alonso", "https://upload.wikimedia.org/wikipedia/commons/2/2a/Chema_Alonso.jpg", "17/06/1975"]
 ]
 const personElement = document.getElementById('persons');
 function getKeyByValue(object, value) {
@@ -98,5 +99,3 @@ function handleColorMode() {
     bodyElement.classList.toggle('dark-mode');
     toggleColorMode.innerHTML = bodyElement.classList.contains('dark-mode') ? 'Light' : 'Dark';
 }
-
-toggleColorMode.addEventListener('click', handleColorMode);

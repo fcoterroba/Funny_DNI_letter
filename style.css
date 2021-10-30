@@ -1,20 +1,40 @@
+html{
+  font-family: 'Roboto', sans-serif;
+}
 .contenedor {
-  position: relative;
+  position: fixed;
   display: inline-block;
   text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .dark-mode{
-  background-color: #3E3D40;
-  color: #fff;
+  background-color: #12324b;
 }
 nav, .page-footer {
-  background-color: #2b7a64;
+  background-color: #125f4b;
+}
+body{
+  background-color: #fffbf4;
+}
+.brand-logo.center, .letter_footer, #color-mode-button{
+  color:  #f4eb9b;
+}
+.container{
+  justify-content: center;
+}
+.letter_footer a{
+  color: #f6b4a5;
+}
+center{
+  display: flex;
+  justify-content: center;
 }
 #color-mode-button{
-  background-color: #31836c;
+  background-color: #15955b;
   border: none;
   border-radius: 8px;
-  color: #fff;
   font-weight: bold;
   cursor: pointer;
   width: 60px;
@@ -37,7 +57,6 @@ nav, .page-footer {
 .page-footer div {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .texto_imagen {
   position: absolute;
